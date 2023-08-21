@@ -16,10 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [RouteController::class, ('welcome')])->name('welcome');
 
-Route::get('/catalogo/{tipologia}', [RouteController::class, ('catalogue')])->name('specificCatalogue');
+Route::get('/catalogo/{tipologia}', [RouteController::class, ('catalogue')])->name('catalogue');
 
-Route::get('/dettaglio-film/{uri}', [RouteController::class, ('detail')])->name('specificDetail');
-
-Route::get('/dettaglio-film', [RouteController::class, ('detail')])->name('detail');
-
-Route::get('/catalogo', [RouteController::class, ('catalogue')])->name('catalogue');
+Route::get('/dettaglio-film/{uri}', [RouteController::class, ('detail')])->name('detail');
