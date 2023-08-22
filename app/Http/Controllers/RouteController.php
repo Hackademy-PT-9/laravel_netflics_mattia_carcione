@@ -33,10 +33,10 @@ class RouteController extends Controller
     }
     public function catalogue()
     {
-        return view('catalogue', ['films' => self::$database['films']]);
+        return view('catalogue');
     }
     public function detail()
     {
-        return view('detail', ['series' => self::$database['series']]);
+        return view('detail');
     }
 }
